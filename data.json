@@ -1,0 +1,14 @@
+{
+  "mark": 98,
+  "title": "Java Exam",
+  "section": {
+    "title": "maven",
+    "desc": "simple maven questions",
+    "exercises": [
+      {
+        "question": "what plugin can provide dependecies info",
+        "answer": "dependency"
+      }
+    ]
+  }
+}
