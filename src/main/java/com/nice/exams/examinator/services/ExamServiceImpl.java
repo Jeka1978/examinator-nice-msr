@@ -1,5 +1,6 @@
-package com.nice.exams.examinator;
+package com.nice.exams.examinator.services;
 
+import com.nice.exams.examinator.CheckedExam;
 import com.nice.exams.examinator.model.SolvedExam;
 import com.nice.exams.examinator.services.ExamService;
 import org.springframework.stereotype.Service;

@@ -1,8 +1,6 @@
 package com.nice.exams.examinator.model;
 
-import lombok.Builder;
-import lombok.Data;
-import lombok.Singular;
+import lombok.*;
 
 import java.util.List;
 
@@ -11,6 +9,8 @@ import java.util.List;
  */
 @Builder
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Section {
     private String title;
     private String desc;

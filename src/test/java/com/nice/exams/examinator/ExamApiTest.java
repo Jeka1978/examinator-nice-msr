@@ -6,6 +6,7 @@ import com.nice.exams.examinator.model.Exercise;
 import com.nice.exams.examinator.model.Section;
 import com.nice.exams.examinator.model.SolvedExam;
 import com.nice.exams.examinator.services.ExamService;
+import com.nice.exams.examinator.services.ExamServiceImpl;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -30,12 +31,12 @@ public class ExamApiTest {
                         .build()).build();
 
         System.out.println(solvedExam);
-    CheckedExam checkedExam = examService.convert(solvedExam);
+        CheckedExam checkedExam = examService.convert(solvedExam);
         Assert.assertEquals("Java Exam", checkedExam.getTitle());
         Assert.assertNotNull(checkedExam.getMark());
         System.out.println(checkedExam);
-    ObjectMapper objectMapper = new ObjectMapper();
-    String json = objectMapper.writeValueAsString(checkedExam);
+        ObjectMapper objectMapper = new ObjectMapper();
+        String json = objectMapper.writeValueAsString(checkedExam);
         System.out.println("json = " + json);
     }
 }
